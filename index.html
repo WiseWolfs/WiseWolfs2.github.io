@@ -160,6 +160,74 @@
 
       <div class="body-wrap">
   
+    <article id="post-node-inspector调试Node-js应用" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/01/18/node-inspector调试Node-js应用/" class="article-date">
+  	<time datetime="2016-01-18T11:38:06.000Z" itemprop="datePublished">2016-01-18</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/01/18/node-inspector调试Node-js应用/">node-inspector调试Node.js应用</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>用了几天的Node.js，每次出现错误，都是通过console.log这种方式来排错，感觉效率很低，还不易调试。比较几种调试方法，觉得node-inpspector最为方便。</p>
+<p>1.使用npm进行全局安装。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g node-inspector</span><br></pre></td></tr></table></figure></p>
+<p>2.启动inspector服务<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node-inspector &amp;</span><br></pre></td></tr></table></figure></p>
+<p>3.debug模式运行node.js应用<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node --debug app.js</span><br></pre></td></tr></table></figure></p>
+<p>4.通过URL <a href="http://127.0.0.1:8080/debug?port=5858" target="_blank" rel="external">http://127.0.0.1:8080/debug?port=5858</a> 来访问</p>
+<blockquote>
+<p>ps:8080是默认的端口，可以通过node-inspector –web-port = {port}来修改。</p>
+</blockquote>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/">node.js</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/node-js/">node.js</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-Cmd-Markdown阅读编辑器" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
